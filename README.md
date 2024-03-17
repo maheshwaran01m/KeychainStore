@@ -101,7 +101,7 @@ struct ExampleView: View {
   
   private var keychainStorageView: some View {
     
-    Button(!(userPassword?.isEmpty ?? false) ? userPassword ?? "No" : "No Passwork") {
+    Button(!(userPassword?.isEmpty ?? false) ? userPassword ?? "No" : "No Password") {
       userPassword = UUID().uuidString
     }
     .buttonStyle(.borderedProminent)
